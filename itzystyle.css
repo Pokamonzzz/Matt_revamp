@@ -1,0 +1,17 @@
+#ytbg{
+    height: auto;
+    width: 100%;
+    position: fixed;
+    right: 0;
+    margin-top: -15px;
+    z-index: 0;
+}
+#header{
+    z-index: 90;
+    position: absolute;
+    top: 60px;
+    left: 4%;
+}
+.artist_logo{
+    height: 70px;
+}
