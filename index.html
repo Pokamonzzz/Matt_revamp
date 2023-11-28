@@ -5,34 +5,22 @@
         <title>Itzy Website revamp</title>
     </head>
     <body>
+        <div>
+            <img src = "Images/BG.jpg" class="bg">
+        </div>
         <div id = "header" class = "site-header">
             <div>
                 <a href="index.html">
                     <img src="Images/Logo-no.bg ps.png" alt="ITZY" class = "artist_logo">
                 </a>
             </div>
-            <button class = "menu" type = "button" click = "opennav">
-                <img src="Images/Dropdown.png" class = "dplogo">
-            </button>
+            <div class="dropdown">
+                <button class = "menu" type = "button" onclick="opennav()">
+                    <img src="Images/Dropdown.png" class = "dplogo">
+                </button>
+                <div id="dropdown" class="dropdown-content">
+                    
+                </div>
         </div>
-        <div>
-            <img src = "Images/BG.jpg" class="bg">
-        </div>
-        <!--- failed
-        <video autoplay muted loop id="ytbg">
-            <source src="ITZY_cake.mp4"
-            type = "video/mp4">
-        </video>
-        <div class = "vidcontainer">
-            <iframe width="100%" 
-            height="100%" 
-            frameborder ="0"
-            src="https://www.youtube.com/embed/AUq3k7jX7Wg?
-            si=uob7n7ottrjmWB-5&autoplay=1&mute=1&controls=
-            0&shwoinfo=0&autohide=1"
-            title="ITZY cake"></iframe>
-        </div>-->
-        
-          
     </body>
 </html>
