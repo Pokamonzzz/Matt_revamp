@@ -1,10 +1,10 @@
-#ytbg{
-    height: auto;
+.bg{
+    height: 115%;
     width: 100%;
     position: fixed;
-    right: 0;
-    margin-top: -15px;
     z-index: 0;
+    left: 0;
+    top: 0;
 }
 #header{
     z-index: 90;
@@ -12,7 +12,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    background-color: blue;
+    background-color: transparent;
     height: 120px;
     margin: 0;
 }
@@ -24,8 +24,8 @@
     left: 7%;
 }
 .dplogo{
-    height: 70px;
-    width: 90px;
+    height: 60px;
+    width: 80px;
     border: none;
     right: 0;
     position: absolute;
