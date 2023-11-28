@@ -8,11 +8,29 @@
 }
 #header{
     z-index: 90;
-    position: absolute;
-    top: 60px;
-    left: 4%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: blue;
+    height: 120px;
+    margin: 0;
 }
 .artist_logo{
     height: 70px;
+    position: fixed;
+    background-color: red;
+    top: 50px;
+    left: 7%;
 }
-
+.dplogo{
+    height: 70px;
+    width: 90px;
+    border: none;
+    right: 0;
+    position: absolute;
+}
+button{
+    border: 0;
+    background-color: transparent;
+}
