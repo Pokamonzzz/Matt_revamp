@@ -3,6 +3,7 @@
     <head>
         <link rel="stylesheet"href="itzystyle.css" type="text/css">
         <title>Itzy Website revamp</title>
+        <script src="javascript.js"></script>
     </head>
     <body>
         <div>
@@ -15,12 +16,15 @@
                 </a>
             </div>
             <div class="dropdown">
-                <button class = "menu" type = "button" onclick="opennav()">
+                <button id = "dpmenu" onclick="opennav()">
                     <img src="Images/Dropdown.png" class = "dplogo">
                 </button>
                 <div id="dropdown" class="dropdown-content">
-                    
+                    <a href = "index.html"HOME></a>
+                    <a href = "profile.html"PROFILE></a>
+                    <a href = "discography.html"DISCOGRAPHY></a>
+                    <a href = "schedule.html"SCHDEULE></a>
                 </div>
-        </div>
+            </div>
     </body>
 </html>
