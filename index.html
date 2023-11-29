@@ -1,28 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <link rel="stylesheet"href="itzystyle.css" type="text/css">
-        <title>Itzy Website revamp</title>
-        <script src="javascript.js"></script>
-    </head>
-    <body>
+<head>
+    <link rel="stylesheet"href="itzystyle.css" type="text/css">
+    <title>Itzy Website revamp</title>
+    <script src="javascript.js"></script>
+</head>
+<body>
+    <div>
+        <img src = "Images/BG.jpg" class="bg">
+    </div>
+    <!-- Navigation bar -->
+    <div id = "header" class = "site-header">
         <div>
-            <img src = "Images/BG.jpg" class="bg">
+            <a href="index.html">
+                <img src="Images/Logo-no.bg ps.png" alt="ITZY" class = "artist_logo">
+            </a>
         </div>
-        <!-- Navigation bar -->
-        <div id = "header" class = "site-header">
-            <div>
-                <a href="index.html">
-                    <img src="Images/Logo-no.bg ps.png" alt="ITZY" class = "artist_logo">
-                </a>
-            </div>
-            <button type="button" class="nav-tog">
-                <img src="Images/Dropdown.png" class = "dplogo dpmenu"onclick="toggleNav()">
-            </button>
+            <img src="Images/Dropdown.png" class = "dplogo dpmenu"onclick="toggleNav()">
         <nav id="mySidenav" class="menu nav">
-            <button class = "dpmenuclose" type="button" onclick="closeNav()">
-                <img src="Images/btn_siteMenu_close.png" class = "dplogo">
-            </button>
+            <img src="Images/Itzy_logo.dp.png" class="artist_logo">
+            <img src="Images/btn_siteMenu_close.png" class = "dpcross" onclick="closeNav()">
             <ul id="dropdown" class="dropdown-content">
                 <li>
                     <a href = "index.html">HOME</a>

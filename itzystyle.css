@@ -28,11 +28,19 @@
 }
 .dplogo{
     height: 60px;
-    width: 80px;
+    width: 90px;
     border: none;
     top: 50px;
     right: 5%;
     position: absolute;
+}
+.dpcross{
+    border: none;
+    top: 50px;
+    right: 5.5%;
+    position: absolute;
+    height: 50px;
+
 }
 .dpmenu{
     cursor: pointer;
@@ -41,12 +49,26 @@
     position: relative;
     display: block;
 }
-
+#mySidenav {
+    position: fixed;
+    height: 0;
+    width: 100%;
+    background-color: #f9f9f9;
+    z-index: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: height 0.3s; /* Add smooth transition */
+}
+.menu.show #mysidenav{
+    height: 100vh;
+}
 .nav{
     display: none;
 }
-.menu button img{
-    background-color: #4CAF50;
+.menu img{
     color: white;
     border: none;
     padding: 10px;
@@ -56,9 +78,18 @@
 .dropdown-content li {
     list-style: none;
     padding: 10px;
-    border-bottom: 1px solid #ddd;
     z-index: 0;
 }
 .dropdown-content{
     text-align: center;
+    display: flex;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    font-size: 20px;
+    display: flex;
+}
+a::first-letter{
+    vertical-align: middle;
 }
