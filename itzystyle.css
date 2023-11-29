@@ -6,6 +6,15 @@
     left: 0;
     top: 0;
 }
+.bg-overlay {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.4); 
+}
 #header{
     z-index: 2;
     position: fixed;
