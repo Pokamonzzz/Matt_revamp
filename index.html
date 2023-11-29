@@ -15,16 +15,27 @@
                     <img src="Images/Logo-no.bg ps.png" alt="ITZY" class = "artist_logo">
                 </a>
             </div>
-            <div class="dropdown">
-                <button id = "dpmenu" onclick="opennav()">
-                    <img src="Images/Dropdown.png" class = "dplogo">
-                </button>
-                <div id="dropdown" class="dropdown-content">
+            <button class = "dpmenu" onclick="openNav()" type="button">
+                <img src="Images/Dropdown.png" class = "dplogo">
+            </button>
+        <nav id="mySidenav" class="menu">
+            <button class = "dpmenuclose" onclick="closeNav()" type="button">
+                <img src="Images/Dropdown.png" class = "dplogo">
+            </button>
+            <ul id="dropdown" class="dropdown-content">
+                <li>
                     <a href = "index.html"HOME></a>
+                </li>
+                <li>
                     <a href = "profile.html"PROFILE></a>
+                </li>
+                <li>
                     <a href = "discography.html"DISCOGRAPHY></a>
+                </li>
+                <li>
                     <a href = "schedule.html"SCHDEULE></a>
-                </div>
-            </div>  
+                </li>
+            </ul>
+        </nav>  
     </body>
 </html>
