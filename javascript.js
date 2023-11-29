@@ -1,16 +1,21 @@
 function toggleNav() {
     var dropdown = document.getElementById("mySidenav");
-    dropdown.style.display = (dropdown.style.display === "block") ? "none" : "block";
+    var isOpen = dropdown.classList.toggle('show');
+
+    if (isOpen) {
+        // Set the height to fullscreen when opening
+        dropdown.style.height = "100%";
+        dropdown.style.zIndex = "2"
+    } else {
+        // Reset the height when closing
+        dropdown.style.height = "0";
+        dropdown.style.zIndex = "0"
+    }
 }
+
 function closeNav() {
     var dropdown = document.getElementById("mySidenav");
-    dropdown.style.display = "none";
-}
-window.onclick = function (event) {
-    if (!event.target.matches('.dpmenu') && !event.target.closest('.menu')) {
-        var dropdown = document.getElementById("mySidenav");
-        if (dropdown.style.display === "block") {
-            dropdown.style.display = "none";
-        }
-    }
+    dropdown.classList.remove('show');
+    dropdown.style.height = "0";
+    dropdown.style.zIndex = "0"
 }

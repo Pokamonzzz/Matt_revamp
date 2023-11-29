@@ -2,7 +2,7 @@
     height: 115%;
     width: 100%;
     position: fixed;
-    z-index: 0;
+    z-index: 1;
     left: 0;
     top: 0;
 }
@@ -24,6 +24,7 @@
     background-color: transparent;
     top: 50px;
     left: 11%;
+    
 }
 .dplogo{
     height: 60px;
@@ -33,11 +34,8 @@
     right: 5%;
     position: absolute;
 }
-button{
-    border: 0;
-    background-color: blue;
+.dpmenu{
     cursor: pointer;
-    font-size: 50px;
 }
 #dropdown{
     position: relative;
@@ -45,10 +43,20 @@ button{
 }
 #mySidenav {
     display: none;
-    position: absolute;
+    position: fixed;
+    height: 100%;
+    width: 100%;
     background-color: #f9f9f9;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    z-index: 9;
+    z-index: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.menu.show #mySidenav {
+    height: 100%;
 }
 .menu button img{
     background-color: #4CAF50;
@@ -62,7 +70,8 @@ button{
     list-style: none;
     padding: 10px;
     border-bottom: 1px solid #ddd;
+    z-index: 0;
 }
-.dpmenu{
-    cursor: pointer;
+.dropdown-content{
+    text-align: center;
 }
