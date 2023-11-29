@@ -9,31 +9,30 @@
         <div>
             <img src = "Images/BG.jpg" class="bg">
         </div>
+        <!-- Navigation bar -->
         <div id = "header" class = "site-header">
             <div>
                 <a href="index.html">
                     <img src="Images/Logo-no.bg ps.png" alt="ITZY" class = "artist_logo">
                 </a>
             </div>
-            <button class = "dpmenu" onclick="openNav()" type="button">
-                <img src="Images/Dropdown.png" class = "dplogo">
-            </button>
+                <img src="Images/Dropdown.png" class = "dplogo dpmenu"onclick="toggleNav()">
         <nav id="mySidenav" class="menu">
-            <button class = "dpmenuclose" onclick="closeNav()" type="button">
-                <img src="Images/Dropdown.png" class = "dplogo">
+            <button class = "dpmenuclose" type="button" onclick="closeNav()">
+                <img src="Images/btn_siteMenu_close.png" class = "dplogo">
             </button>
             <ul id="dropdown" class="dropdown-content">
                 <li>
-                    <a href = "index.html"HOME></a>
+                    <a href = "index.html">HOME</a>
                 </li>
                 <li>
-                    <a href = "profile.html"PROFILE></a>
+                    <a href = "profile.html">PROFILE</a>
                 </li>
                 <li>
-                    <a href = "discography.html"DISCOGRAPHY></a>
+                    <a href = "discography.html">DISCOGRAPHY</a>
                 </li>
                 <li>
-                    <a href = "schedule.html"SCHDEULE></a>
+                    <a href = "schedule.html">SCHDEULE</a>
                 </li>
             </ul>
         </nav>  

@@ -7,7 +7,7 @@
     top: 0;
 }
 #header{
-    z-index: 5;
+    z-index: 2;
     position: fixed;
     align-items: center;
     top: 0;
@@ -43,16 +43,26 @@ button{
     position: relative;
     display: block;
 }
-.ham_menu{
+#mySidenav {
+    display: none;
     position: absolute;
-    top: 60px;
-    right: 3%;
-    z-index: 1111111111;
-    display: inline-block;
-    white-space: nowrap;
-    width: 28px;
-    height: 28px;
+    background-color: #f9f9f9;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 9;
 }
-.show{
-    display: block;
+.menu button img{
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+.dropdown-content li {
+    list-style: none;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+.dpmenu{
+    cursor: pointer;
 }
