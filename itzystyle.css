@@ -91,6 +91,7 @@ a{
     display: flex;
     font-weight: bold;
     color: black;
+    letter-spacing: 2px;
 }
 a::first-letter{
     vertical-align: middle;
