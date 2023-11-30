@@ -136,3 +136,12 @@ a::first-letter{
         transform: translateX(0);
     }
 }
+.line{
+    width: 275px;
+    position: absolute;
+    float: right;
+    border: 1px solid #fff;
+    right: 11px;
+    animation: fadeInRight 0.3s ease-in-out forwards;
+    bottom: 0;
+}
