@@ -161,3 +161,20 @@ a::first-letter{
     font-size: 20px;
     color: #fff;
 }
+#footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 8;
+    height: 80px;
+    background-color: blue;
+}
+.sma{
+    bottom: 45px;
+    left: 3%;
+}
+.sma li{
+    display: inline-block;
+    margin-left: 20px;
+}
