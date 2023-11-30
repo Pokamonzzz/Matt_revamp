@@ -1,9 +1,9 @@
 function toggleNav() {
     var dropdown = document.getElementById("mySidenav");
-    var isOpen = dropdown.classList.toggle('menu');
+    dropdown.classList.toggle('show');
 
-    if (isOpen) {
-        // Set the height to fullscreen when opening
+    if (dropdown.classList.contains('show')) {
+        // Set height for fullscreen
         dropdown.style.height = "100%";
     } else {
         // Reset the height when closing
