@@ -220,13 +220,12 @@ a::first-letter{
 /* PFOFILE OF EACH ONE---------*/
 .cont{
     position: fixed;
-    left: -120px;
+    left: 17%;
     top: 50px;
-    width: 900px;
+    width: auto;
     height: auto;
     margin: 0 auto;
     z-index: 11;
-    background-color: blue;
 }
 #idols{
     position: fixed;
@@ -246,7 +245,6 @@ a::first-letter{
     font-weight: bold;
     text-align: left;
     justify-content: flex-end;
-    background-color: lightblue;
 }
 .pfp{
     position: relative;
@@ -255,6 +253,7 @@ a::first-letter{
     width: 900px;
     height: auto;
     margin: 0 40%;
+    margin-bottom: 300px;
 }
 .profile_inner{
     position: relative;
@@ -264,6 +263,9 @@ a::first-letter{
 
 }
 /* bg colour for artist */
+#yeji{
+    margin-top: 200px;
+}
 .color_bg{
     position: absolute;
     top: -50px;
