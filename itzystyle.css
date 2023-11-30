@@ -2,7 +2,7 @@
     height: 115%;
     width: 100%;
     position: fixed;
-    z-index: 1;
+    z-index: 0;
     left: 0;
     top: 0;
 }
@@ -12,7 +12,7 @@
     position: fixed;
     left: 0;
     top: 0;
-    z-index: 2;
+    z-index: 1;
     background-color: rgba(0, 0, 0, 0.4); 
 }
 #header{
@@ -63,7 +63,7 @@
     height: 0;
     width: 100%;
     background-color: #f9f9f9;
-    z-index: 3;
+    z-index: 11111;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -124,7 +124,6 @@ a::first-letter{
     visibility: visible;
     animation-delay: 0.1s;
     animation: fadeInRight 0.3s ease-in-out forwards;
-
 }
 .main_album_name{
     display: flex;
@@ -187,4 +186,34 @@ a::first-letter{
 .sma li img{
     height: 50px;
     width: 50px;
+}
+
+/* PROFILE CSS ----------------*/
+.profile{
+    z-index: 2;
+}
+#bgprofile{
+    background-color: rgb(234, 234, 234);
+    z-index: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+#title_page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-color: transparent;
+    height: 50px;
+    position: relative;
+    z-index: 3;
+}
+.pg_num .name_page{
+    display: inline-block;
+    letter-spacing: 2px;
+    position: relative;
+    z-index: 500;
 }
