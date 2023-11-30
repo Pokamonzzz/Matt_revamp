@@ -112,9 +112,12 @@ a::first-letter{
     top: 23%;
     z-index: 3;
     width: 750px;
+    height: 200px;
+    background-color: transparent;
     visibility: visible;
     animation-delay: 0.1s;
     animation: fadeInRight 0.3s ease-in-out forwards;
+
 }
 .main_album_name{
     display: flex;
@@ -144,4 +147,17 @@ a::first-letter{
     right: 11px;
     animation: fadeInRight 0.3s ease-in-out forwards;
     bottom: 0;
+}
+.main_schedule a{
+    right: 10px;
+    bottom: -60px;
+    position: absolute;
+    color: #fff;
+}
+.main_schedule_word a{
+    right: 10px;
+    bottom: -100px;
+    position: absolute;
+    font-size: 20px;
+    color: #fff;
 }
