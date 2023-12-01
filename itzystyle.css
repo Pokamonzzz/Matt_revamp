@@ -460,4 +460,7 @@ a::first-letter {
     height: 100%;
   }
   /*profile screen*/
+  .bg_profile{
+    width: 100%;
+  }
 }
