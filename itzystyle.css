@@ -229,6 +229,7 @@ a::first-letter {
 #idols {
   position: fixed;
   top: 0;
+  display: flex;
 }
 #idols nav {
   position: absolute;
@@ -462,5 +463,58 @@ a::first-letter {
   /*profile screen*/
   .bg_profile{
     width: 100%;
+  }
+  .container_pfp{
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+  }
+  .container_pfp img{
+    width: 100%;
+    height: 100%;
+  }
+  #idols {
+    position: absolute;
+    top: 0;
+    display: flex;
+    left: 0;
+
+  }
+  #idols nav {
+    display: flex;
+    left: 0;
+  }
+  #idols ul li a {
+    font-size: 15px;
+    justify-content: flex-start;
+  }
+  .pfp {
+    width: 100%;
+    position: relative;
+    margin-bottom: 100%;
+    margin-top: 30%;
+  }
+  .profile_inner {
+    position: absolute;
+    width: 100%;
+  }
+  .color_bg{
+    visibility: hidden;
+  }
+  .cont_schedule {
+  position: absolute;
+  width: 100%;
+  }
+  .cont_schedule .n_left{
+    position: absolute;
+    width: 100%;
+  }
+  .cont_schedule .n_right{
+    margin-top: 30% ;
+  }
+  .artist_img{
+    margin-bottom: 100%;
   }
 }
