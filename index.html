@@ -1,144 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet"href="normalize.css" type="text/css">
-    <link rel="stylesheet" href="itzystyle.css" type="text/css">
+  <head>
+    <link rel="stylesheet" href="normalize.css" type="text/css" />
+    <link rel="stylesheet" href="itzystyle.css" type="text/css" />
     <title>Itzy Website revamp</title>
     <script src="javascript.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
     <div>
-        <img src = "Images/BG.webp" class="bg" alt="bg">
-        <div class="bg-overlay"></div>
+      <img src="Images/BG.webp" class="bg" alt="bg" />
+      <div class="bg-overlay"></div>
     </div>
     <!-- dropdown menu -->
-    <div id = "header" class = "site-header">
-        <div>
-            <a href="index.html">
-                <img src="Images/Logo-no.bg_ps.png" alt="ITZY" class = "artist_logo">
+    <div id="header" class="site-header">
+      <div>
+        <a href="index.html">
+          <img src="Images/Logo-no.bg_ps.png" alt="ITZY" class="artist_logo" />
+        </a>
+      </div>
+      <img
+        src="Images/Dropdown.png"
+        alt="dropdown"
+        class="dplogo dpmenu"
+        onclick="toggleNav()"
+      />
+      <nav id="mySidenav" class="menu nav">
+        <a href="index.html">
+          <img src="Images/Itzy_logo.dp.webp" alt="logo" class="artist_logo" />
+        </a>
+        <img
+          src="Images/btn_siteMenu_close.png"
+          alt="cross"
+          class="dpcross dpmenu"
+          onclick="closeNav()"
+        />
+        <ul id="dropdown" class="dropdown-content">
+          <li>
+            <a href="index.html">HOME</a>
+          </li>
+          <li>
+            <a href="profile.html">PROFILE</a>
+          </li>
+          <li>
+            <a href="schedule.html">NOTICE</a>
+          </li>
+        </ul>
+        <ul class="sma">
+          <li>
+            <a href="https://www.instagram.com/itzy.all.in.us" target="_blank">
+              <img src="Images/sns_instagram.png" alt="insta" />
             </a>
-        </div>
-            <img src="Images/Dropdown.png" alt="dropdown" class = "dplogo dpmenu" onclick="toggleNav()">
-        <nav id="mySidenav" class="menu nav">
-            <a href="index.html">
-                <img src="Images/Itzy_logo.dp.webp" alt="logo" class="artist_logo">
+          </li>
+          <li>
+            <a href="https://twitter.com/ITZYOfficial" target="_blank">
+              <img src="Images/sns_twitter.png" alt="twitter" />
             </a>
-            <img src="Images/btn_siteMenu_close.png" alt="cross" class = "dpcross dpmenu" onclick="closeNav()">
-            <ul id="dropdown" class="dropdown-content">
-                <li>
-                    <a href = "index.html">HOME</a>
-                </li>
-                <li>
-                    <a href = "profile.html">PROFILE</a>
-                </li>
-                <li>
-                    <a href = "schedule.html">NOTICE</a>
-                </li>
-            </ul>
-            <ul class="sma">
-                <li>
-                    <a href="https://www.instagram.com/itzy.all.in.us" target="_blank">
-                        <img src="Images/sns_instagram.png" alt="insta">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://twitter.com/ITZYOfficial" target="_blank">
-                        <img src="Images/sns_twitter.png" alt="twitter">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.facebook.com/OfficialItzy" target="_blank">
-                        <img alt="FACEBOOK" src="Images/sns_facebook.png">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.youtube.com/c/ITZY" target="_blank">
-                        <img alt="YOUTUBE" src="Images/sns_youtube.png">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.tiktok.com/@itzyofficial" target="_blank">
-                       <img alt="TIKTOK" src="Images/sns_tiktok.png">
-                     </a>
-                </li>
-                <li>
-                    <a href="https://weibo.com/u/7462077750?is_all=1 " target="_blank">
-                        <img alt="WEIBO" src="Images/sns_weibo.png">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://fans.jype.com/itzy" target="_blank">
-                        <img alt="FANS" src="Images/sns_fans.png">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://thejypshop.com/itzy.html" target="_blank">
-                        <img alt="SHOP" src="Images/sns_shop.png">
-                    </a>
-                </li>
-            </ul>
-        </nav>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/OfficialItzy" target="_blank">
+              <img alt="FACEBOOK" src="Images/sns_facebook.png" />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/c/ITZY" target="_blank">
+              <img alt="YOUTUBE" src="Images/sns_youtube.png" />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.tiktok.com/@itzyofficial" target="_blank">
+              <img alt="TIKTOK" src="Images/sns_tiktok.png" />
+            </a>
+          </li>
+          <li>
+            <a href="https://weibo.com/u/7462077750?is_all=1 " target="_blank">
+              <img alt="WEIBO" src="Images/sns_weibo.png" />
+            </a>
+          </li>
+          <li>
+            <a href="https://fans.jype.com/itzy" target="_blank">
+              <img alt="FANS" src="Images/sns_fans.png" />
+            </a>
+          </li>
+          <li>
+            <a href="https://thejypshop.com/itzy.html" target="_blank">
+              <img alt="SHOP" src="Images/sns_shop.png" />
+            </a>
+          </li>
+        </ul>
+      </nav>
     </div>
     <div class="container">
-        <div class="right_cont">
-            <div class="album_name album_style" >
-                <div class="main_album_name album_style">
-                    <a href="https://youtu.be/0bIRwBpBcZQ?si=oHWdTKKF5p5Gcuwm">KILL MY<br>DOUBT</a>
-                </div>
-                <div class="line"></div>
-            </div>
-            <div class="main_schedule">
-                <a href="schedule.html">Notice</a>
-            </div>
-            <div class="main_schedule_word">
-                <a href="schedule.html">Offline fan sign in Osaka</a>
-            </div>
+      <div class="right_cont">
+        <div class="album_name album_style">
+          <div class="main_album_name album_style">
+            <a href="https://youtu.be/0bIRwBpBcZQ?si=oHWdTKKF5p5Gcuwm"
+              >KILL MY<br />DOUBT</a
+            >
+          </div>
+          <div class="line"></div>
         </div>
+        <div class="main_schedule">
+          <a href="schedule.html">Notice</a>
+        </div>
+        <div class="main_schedule_word">
+          <a href="schedule.html">Offline fan sign in Osaka</a>
+        </div>
+      </div>
     </div>
     <footer id="footer">
-        <ul class="sma">
-            <li>
-                <a href="https://www.instagram.com/itzy.all.in.us" target="_blank">
-                    <img src="Images/sns_instagram.png" alt="insta">
-                </a>
-            </li>
-            <li>
-                <a href="https://twitter.com/ITZYOfficial" target="_blank">
-                    <img src="Images/sns_twitter.png" alt="twitter">
-                </a>
-            </li>
-            <li>
-                <a href="https://www.facebook.com/OfficialItzy" target="_blank">
-                    <img alt="FACEBOOK" src="Images/sns_facebook.png">
-                </a>
-            </li>
-            <li>
-                <a href="https://www.youtube.com/c/ITZY" target="_blank">
-                    <img alt="YOUTUBE" src="Images/sns_youtube.png">
-                </a>
-            </li>
-            <li>
-                <a href="https://www.tiktok.com/@itzyofficial" target="_blank">
-                   <img alt="TIKTOK" src="Images/sns_tiktok.png">
-                 </a>
-            </li>
-            <li>
-                <a href="https://weibo.com/u/7462077750?is_all=1 " target="_blank">
-                    <img alt="WEIBO" src="Images/sns_weibo.png">
-                </a>
-            </li>
-            <li>
-                <a href="https://fans.jype.com/itzy" target="_blank">
-                    <img alt="FANS" src="Images/sns_fans.png">
-                </a>
-            </li>
-            <li>
-                <a href="https://thejypshop.com/itzy.html" target="_blank">
-                    <img alt="SHOP" src="Images/sns_shop.png">
-                </a>
-            </li>
-        </ul>
+      <ul class="sma">
+        <li>
+          <a href="https://www.instagram.com/itzy.all.in.us" target="_blank">
+            <img src="Images/sns_instagram.png" alt="insta" />
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/ITZYOfficial" target="_blank">
+            <img src="Images/sns_twitter.png" alt="twitter" />
+          </a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/OfficialItzy" target="_blank">
+            <img alt="FACEBOOK" src="Images/sns_facebook.png" />
+          </a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/c/ITZY" target="_blank">
+            <img alt="YOUTUBE" src="Images/sns_youtube.png" />
+          </a>
+        </li>
+        <li>
+          <a href="https://www.tiktok.com/@itzyofficial" target="_blank">
+            <img alt="TIKTOK" src="Images/sns_tiktok.png" />
+          </a>
+        </li>
+        <li>
+          <a href="https://weibo.com/u/7462077750?is_all=1 " target="_blank">
+            <img alt="WEIBO" src="Images/sns_weibo.png" />
+          </a>
+        </li>
+        <li>
+          <a href="https://fans.jype.com/itzy" target="_blank">
+            <img alt="FANS" src="Images/sns_fans.png" />
+          </a>
+        </li>
+        <li>
+          <a href="https://thejypshop.com/itzy.html" target="_blank">
+            <img alt="SHOP" src="Images/sns_shop.png" />
+          </a>
+        </li>
+      </ul>
     </footer>
-</body>
+  </body>
 </html>
