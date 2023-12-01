@@ -1,3 +1,4 @@
+//open dropdown menu
 function toggleNav() {
     var dropdown = document.getElementById("mySidenav");
     dropdown.classList.toggle('show');
@@ -15,4 +16,8 @@ function closeNav() {
     var dropdown = document.getElementById("mySidenav");
     dropdown.classList.remove('show');
     dropdown.style.height = "0";
+}
+// when refreshed it goes back to the top
+window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
 }
