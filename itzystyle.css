@@ -320,7 +320,7 @@ a::first-letter {
     top: 80px;
     left: 245pt;
     width: 980px;
-    height: auto;
+    height: 1350px;
     visibility: visible;
     animation-delay: 0.1s;
     animation: fadeInUp 0.5s ease-in-out forwards;
