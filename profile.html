@@ -8,229 +8,230 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
-    <div id="bgprofile"></div>
-    <div id="header" class="profile">
-      <a href="index.html">
-        <img src="Images/Itzy_logo.dp.webp" class="artist_logo" />
-      </a>
-      <img
-        src="Images/Dropdown.png"
-        style="filter: grayscale(100%) invert(100%)"
-        class="dplogo dpmenu"
-        onclick="toggleNav()"
-      />
+    <div id="bgprofile">
+      <div id="header" class="profile">
+        <a href="index.html">
+          <img src="Images/Itzy_logo.dp.webp" class="artist_logo" />
+        </a>
+        <img
+          src="Images/Dropdown.png"
+          style="filter: grayscale(100%) invert(100%)"
+          class="dplogo dpmenu"
+          onclick="toggleNav()"
+        />
+      </div>
+      <nav id="mySidenav" class="menu nav">
+        <a href="index.html">
+          <img src="Images/Itzy_logo.dp.webp" class="artist_logo" />
+        </a>
+        <img
+          src="Images/btn_siteMenu_close.png"
+          class="dpcross dpmenu"
+          onclick="closeNav()"
+        />
+        <ul id="dropdown" class="dropdown-content">
+          <li>
+            <a href="index.html">HOME</a>
+          </li>
+          <li>
+            <a href="profile.html">PROFILE</a>
+          </li>
+          <li>
+            <a href="schedule.html">NOTICE</a>
+          </li>
+        </ul>
+        <ul class="sma">
+          <li>
+            <a href="https://www.instagram.com/itzy.all.in.us" target="_blank">
+              <img src="Images/sns_instagram.png" alt="insta" />
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/ITZYOfficial" target="_blank">
+              <img src="Images/sns_twitter.png" alt="twitter" />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/OfficialItzy" target="_blank">
+              <img alt="FACEBOOK" src="Images/sns_facebook.png" />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/c/ITZY" target="_blank">
+              <img alt="YOUTUBE" src="Images/sns_youtube.png" />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.tiktok.com/@itzyofficial" target="_blank">
+              <img alt="TIKTOK" src="Images/sns_tiktok.png" />
+            </a>
+          </li>
+          <li>
+            <a href="https://weibo.com/u/7462077750?is_all=1 " target="_blank">
+              <img alt="WEIBO" src="Images/sns_weibo.png" />
+            </a>
+          </li>
+          <li>
+            <a href="https://fans.jype.com/itzy" target="_blank">
+              <img alt="FANS" src="Images/sns_fans.png" />
+            </a>
+          </li>
+          <li>
+            <a href="https://thejypshop.com/itzy.html" target="_blank">
+              <img alt="SHOP" src="Images/sns_shop.png" />
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div id="title_page">
+        <div class="pg_num" style="font-weight: bold">
+          01
+          <span class="name_page"> PROFILE </span>
+        </div>
+      </div>
+      <div class="container_pfp">
+        <div class="cont_profile" id="idols">
+          <nav>
+            <ul>
+              <li><a href="#yeji">YEJI</a></li>
+              <li><a href="#lia">LIA</a></li>
+              <li><a href="#ryujin">RYUJIN</a></li>
+              <li><a href="#chaer">CHAERYEONG</a></li>
+              <li><a href="#yuna">YUNA</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="pfp" id="yeji">
+          <div class="profile_inner">
+            <div class="color_bg"></div>
+            <div class="artist_img">
+              <img alt="Itzy" src="Images/yeji.webp" />
+            </div>
+            <div class="profile_text">
+              <div class="name">YEJI</div>
+              <div class="about">
+                <b>Birthday:</b> MAY 26, 2000<br />
+                <b>Position:</b> Leader, Main Dancer, Lead Vocalist, Sub Rapper<br />
+                <b>MBTI Type:</b> ESFJ<br />
+                <b>Nationality:</b>Korean
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="pfp" id="lia">
+          <div class="profile_inner">
+            <div class="color_bg"></div>
+            <div class="artist_img">
+              <img alt="YEJI" src="Images/Lia.webp" />
+            </div>
+            <div class="profile_text">
+              <div class="name">LIA</div>
+              <div class="about">
+                <b>Birthday:</b> JULY 21, 2000<br />
+                <b>Position:</b> Main Vocalist, Sub Rapper<br />
+                <b>MBTI Type:</b> ESFJ<br />
+                <b>Nationality:</b>Korean
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="pfp" id="ryujin">
+          <div class="profile_inner">
+            <div class="color_bg"></div>
+            <div class="artist_img">
+              <img alt="YEJI" src="Images/ryujin.webp" />
+            </div>
+            <div class="profile_text">
+              <div class="name">RYUJIN</div>
+              <div class="about">
+                <b>Birthday:</b> April 17, 2001<br />
+                <b>Position:</b> Main Rapper, Lead Dancer, Sub Vocalist, Center<br />
+                <b>MBTI Type:</b> INTJ<br />
+                <b>Nationality:</b>Korean
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="pfp" id="chaer">
+          <div class="profile_inner">
+            <div class="color_bg"></div>
+            <div class="artist_img">
+              <img alt="Itzy" src="Images/Chaeryeoung.webp" />
+            </div>
+            <div class="profile_text">
+              <div class="name">RYUJIN</div>
+              <div class="about">
+                <b>Birthday:</b> June 5, 2001<br />
+                <b>Position:</b> Main Dancer, Sub Vocalist, Sub Rapper<br />
+                <b>MBTI Type:</b> ISFJ<br />
+                <b>Nationality:</b>Korean
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="pfp_last" id="yuna">
+          <div class="profile_inner">
+            <div class="color_bg"></div>
+            <div class="artist_img">
+              <img alt="Itzy" src="Images/Yuna.webp" />
+            </div>
+            <div class="profile_text">
+              <div class="name">YUNA</div>
+              <div class="about">
+                <b>Birthday:</b> December 9, 2003<br />
+                <b>Position:</b> Lead Rapper, Lead Dancer, Sub Vocalist, Visual,
+                Maknae<br />
+                <b>MBTI Type:</b> ISFJ<br />
+                <b>Nationality:</b>Korean
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer id="footer" style="position: relative;">
+        <ul class="sma" style="filter: grayscale(100%) invert(100%)">
+          <li>
+            <a href="https://www.instagram.com/itzy.all.in.us" target="_blank">
+              <img src="Images/sns_instagram.png" alt="insta" />
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/ITZYOfficial" target="_blank">
+              <img src="Images/sns_twitter.png" alt="twitter" />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/OfficialItzy" target="_blank">
+              <img alt="FACEBOOK" src="Images/sns_facebook.png" />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/c/ITZY" target="_blank">
+              <img alt="YOUTUBE" src="Images/sns_youtube.png" />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.tiktok.com/@itzyofficial" target="_blank">
+              <img alt="TIKTOK" src="Images/sns_tiktok.png" />
+            </a>
+          </li>
+          <li>
+            <a href="https://weibo.com/u/7462077750?is_all=1 " target="_blank">
+              <img alt="WEIBO" src="Images/sns_weibo.png" />
+            </a>
+          </li>
+          <li>
+            <a href="https://fans.jype.com/itzy" target="_blank">
+              <img alt="FANS" src="Images/sns_fans.png" />
+            </a>
+          </li>
+          <li>
+            <a href="https://thejypshop.com/itzy.html" target="_blank">
+              <img alt="SHOP" src="Images/sns_shop.png" />
+            </a>
+          </li>
+        </ul>
+      </footer>
     </div>
-    <nav id="mySidenav" class="menu nav">
-      <a href="index.html">
-        <img src="Images/Itzy_logo.dp.webp" class="artist_logo" />
-      </a>
-      <img
-        src="Images/btn_siteMenu_close.png"
-        class="dpcross dpmenu"
-        onclick="closeNav()"
-      />
-      <ul id="dropdown" class="dropdown-content">
-        <li>
-          <a href="index.html">HOME</a>
-        </li>
-        <li>
-          <a href="profile.html">PROFILE</a>
-        </li>
-        <li>
-          <a href="schedule.html">NOTICE</a>
-        </li>
-      </ul>
-      <ul class="sma">
-        <li>
-          <a href="https://www.instagram.com/itzy.all.in.us" target="_blank">
-            <img src="Images/sns_instagram.png" alt="insta" />
-          </a>
-        </li>
-        <li>
-          <a href="https://twitter.com/ITZYOfficial" target="_blank">
-            <img src="Images/sns_twitter.png" alt="twitter" />
-          </a>
-        </li>
-        <li>
-          <a href="https://www.facebook.com/OfficialItzy" target="_blank">
-            <img alt="FACEBOOK" src="Images/sns_facebook.png" />
-          </a>
-        </li>
-        <li>
-          <a href="https://www.youtube.com/c/ITZY" target="_blank">
-            <img alt="YOUTUBE" src="Images/sns_youtube.png" />
-          </a>
-        </li>
-        <li>
-          <a href="https://www.tiktok.com/@itzyofficial" target="_blank">
-            <img alt="TIKTOK" src="Images/sns_tiktok.png" />
-          </a>
-        </li>
-        <li>
-          <a href="https://weibo.com/u/7462077750?is_all=1 " target="_blank">
-            <img alt="WEIBO" src="Images/sns_weibo.png" />
-          </a>
-        </li>
-        <li>
-          <a href="https://fans.jype.com/itzy" target="_blank">
-            <img alt="FANS" src="Images/sns_fans.png" />
-          </a>
-        </li>
-        <li>
-          <a href="https://thejypshop.com/itzy.html" target="_blank">
-            <img alt="SHOP" src="Images/sns_shop.png" />
-          </a>
-        </li>
-      </ul>
-    </nav>
-    <div id="title_page">
-      <div class="pg_num" style="font-weight: bold">
-        01
-        <span class="name_page"> PROFILE </span>
-      </div>
-    </div>
-    <div class="container_pfp">
-      <div class="cont_profile" id="idols">
-        <nav>
-          <ul>
-            <li><a href="#yeji">YEJI</a></li>
-            <li><a href="#lia">LIA</a></li>
-            <li><a href="#ryujin">RYUJIN</a></li>
-            <li><a href="#chaer">CHAERYEONG</a></li>
-            <li><a href="#yuna">YUNA</a></li>
-          </ul>
-        </nav>
-      </div>
-      <div class="pfp" id="yeji">
-        <div class="profile_inner">
-          <div class="color_bg"></div>
-          <div class="artist_img">
-            <img alt="Itzy" src="Images/yeji.webp" />
-          </div>
-          <div class="profile_text">
-            <div class="name">YEJI</div>
-            <div class="about">
-              <b>Birthday:</b> MAY 26, 2000<br />
-              <b>Position:</b> Leader, Main Dancer, Lead Vocalist, Sub Rapper<br />
-              <b>MBTI Type:</b> ESFJ<br />
-              <b>Nationality:</b>Korean
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="pfp" id="lia">
-        <div class="profile_inner">
-          <div class="color_bg"></div>
-          <div class="artist_img">
-            <img alt="YEJI" src="Images/Lia.webp" />
-          </div>
-          <div class="profile_text">
-            <div class="name">LIA</div>
-            <div class="about">
-              <b>Birthday:</b> JULY 21, 2000<br />
-              <b>Position:</b> Main Vocalist, Sub Rapper<br />
-              <b>MBTI Type:</b> ESFJ<br />
-              <b>Nationality:</b>Korean
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="pfp" id="ryujin">
-        <div class="profile_inner">
-          <div class="color_bg"></div>
-          <div class="artist_img">
-            <img alt="YEJI" src="Images/ryujin.webp" />
-          </div>
-          <div class="profile_text">
-            <div class="name">RYUJIN</div>
-            <div class="about">
-              <b>Birthday:</b> April 17, 2001<br />
-              <b>Position:</b> Main Rapper, Lead Dancer, Sub Vocalist, Center<br />
-              <b>MBTI Type:</b> INTJ<br />
-              <b>Nationality:</b>Korean
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="pfp" id="chaer">
-        <div class="profile_inner">
-          <div class="color_bg"></div>
-          <div class="artist_img">
-            <img alt="Itzy" src="Images/Chaeryeoung.webp" />
-          </div>
-          <div class="profile_text">
-            <div class="name">RYUJIN</div>
-            <div class="about">
-              <b>Birthday:</b> June 5, 2001<br />
-              <b>Position:</b> Main Dancer, Sub Vocalist, Sub Rapper<br />
-              <b>MBTI Type:</b> ISFJ<br />
-              <b>Nationality:</b>Korean
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="pfp_last" id="yuna">
-        <div class="profile_inner">
-          <div class="color_bg"></div>
-          <div class="artist_img">
-            <img alt="Itzy" src="Images/Yuna.webp" />
-          </div>
-          <div class="profile_text">
-            <div class="name">YUNA</div>
-            <div class="about">
-              <b>Birthday:</b> December 9, 2003<br />
-              <b>Position:</b> Lead Rapper, Lead Dancer, Sub Vocalist, Visual,
-              Maknae<br />
-              <b>MBTI Type:</b> ISFJ<br />
-              <b>Nationality:</b>Korean
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <footer id="footer" style="position: relative;">
-      <ul class="sma" style="filter: grayscale(100%) invert(100%)">
-        <li>
-          <a href="https://www.instagram.com/itzy.all.in.us" target="_blank">
-            <img src="Images/sns_instagram.png" alt="insta" />
-          </a>
-        </li>
-        <li>
-          <a href="https://twitter.com/ITZYOfficial" target="_blank">
-            <img src="Images/sns_twitter.png" alt="twitter" />
-          </a>
-        </li>
-        <li>
-          <a href="https://www.facebook.com/OfficialItzy" target="_blank">
-            <img alt="FACEBOOK" src="Images/sns_facebook.png" />
-          </a>
-        </li>
-        <li>
-          <a href="https://www.youtube.com/c/ITZY" target="_blank">
-            <img alt="YOUTUBE" src="Images/sns_youtube.png" />
-          </a>
-        </li>
-        <li>
-          <a href="https://www.tiktok.com/@itzyofficial" target="_blank">
-            <img alt="TIKTOK" src="Images/sns_tiktok.png" />
-          </a>
-        </li>
-        <li>
-          <a href="https://weibo.com/u/7462077750?is_all=1 " target="_blank">
-            <img alt="WEIBO" src="Images/sns_weibo.png" />
-          </a>
-        </li>
-        <li>
-          <a href="https://fans.jype.com/itzy" target="_blank">
-            <img alt="FANS" src="Images/sns_fans.png" />
-          </a>
-        </li>
-        <li>
-          <a href="https://thejypshop.com/itzy.html" target="_blank">
-            <img alt="SHOP" src="Images/sns_shop.png" />
-          </a>
-        </li>
-      </ul>
-    </footer>
   </body>
 </html>
