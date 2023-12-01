@@ -1,3 +1,4 @@
+/* HOME */
 .bg {
   height: 115%;
   width: 100%;
@@ -5,13 +6,6 @@
   z-index: 0;
   left: 0;
   top: 0;
-}
-@media screen and (max-width: 800px){
-    .bg{
-        height: auto;
-        width: 100%;
-        text-align: center;
-    }
 }
 .bg-overlay {
   height: 100%;
@@ -405,4 +399,56 @@ a::first-letter {
     text-align: left;
     display: block;
     line-height: 1.5;
+}
+@media screen and (max-width: 800px) and (max-height:1200px){
+    .bg{
+        width: 100%;
+        height: auto;
+        top: 30%;
+        z-index: 0;
+        opacity: 0.8;
+    }
+    .bg-overlay{
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        z-index: -1;
+    }
+    .artist_logo{
+        height: 50px;
+    }
+    .dplogo{
+        height: 40px;
+        width: 60px;
+    }
+    .main_album_name{
+        position: relative;
+        top: -50px;
+    }
+    .main_album_name a{
+        font-size: 30px;
+    }
+    .line{
+        visibility: hidden;
+    }
+    .right_cont{    
+        height: 35%;
+        position: fixed;
+    }
+    #footer{
+        visibility: hidden;
+    }
+    a{
+        font-size: 30px;
+    }
+    .sma{
+        width: 80%;
+    }
+    .sma li{
+        margin-left: 0;
+    }
+    .sma li img{
+        width: 30%;
+        height: 30%;
+    }
 }
