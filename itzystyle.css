@@ -261,7 +261,7 @@ a::first-letter {
   position: relative;
   width: 800px;
   height: 795px;
-  background-color: lightgreen;
+  background-color: transparent;
 }
 /* bg colour for artist */
 .color_bg {
