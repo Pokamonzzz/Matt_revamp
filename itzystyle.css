@@ -1,294 +1,292 @@
-.bg{
-    height: 115%;
-    width: 100%;
-    position: fixed;
-    z-index: 0;
-    left: 0;
-    top: 0;
+.bg {
+  height: 115%;
+  width: 100%;
+  position: fixed;
+  z-index: 0;
+  left: 0;
+  top: 0;
 }
 .bg-overlay {
-    height: 100%;
-    width: 100%;
-    position: fixed;
-    left: 0;
-    top: 0;
-    z-index: 1;
-    background-color: rgba(0, 0, 0, 0.4); 
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.4);
 }
-#header{
-    z-index: 10;
-    position: fixed;
-    align-items: center;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: transparent;
-    height: 120px;
-    margin: 0;
-    padding: 0;
+#header {
+  z-index: 10;
+  position: fixed;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent;
+  height: 120px;
+  margin: 0;
+  padding: 0;
 }
-.artist_logo{
-    height: 80px;
-    position: absolute;
-    background-color: transparent;
-    top: 50px;
-    left: 11%;
-    
+.artist_logo {
+  height: 80px;
+  position: absolute;
+  background-color: transparent;
+  top: 50px;
+  left: 11%;
 }
-.dplogo{
-    height: 60px;
-    width: 90px;
-    border: none;
-    top: 50px;
-    right: 10%;
-    position: absolute;
+.dplogo {
+  height: 60px;
+  width: 90px;
+  border: none;
+  top: 50px;
+  right: 10%;
+  position: absolute;
 }
-.dpcross{
-    border: none;
-    width: 50px;
-    height: 50px;
-    top: 50px;
-    right: 10%;
-    position: absolute;    
+.dpcross {
+  border: none;
+  width: 50px;
+  height: 50px;
+  top: 50px;
+  right: 10%;
+  position: absolute;
 }
-.dpmenu{
-    cursor: pointer;
+.dpmenu {
+  cursor: pointer;
 }
-#dropdown{
-    position: relative;
-    display: block;
+#dropdown {
+  position: relative;
+  display: block;
 }
 #mySidenav {
-    position: fixed;
-    height: 0;
-    width: 100%;
-    background-color: #f9f9f9;
-    z-index: 11111;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    transition: height 0.3s; /* Add smooth transition */
+  position: fixed;
+  height: 0;
+  width: 100%;
+  background-color: #f9f9f9;
+  z-index: 11111;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: height 0.3s; /* Add smooth transition */
 }
-#mySidenav .sma img{
-    filter: grayscale(100%) invert(100%);
+#mySidenav .sma img {
+  filter: grayscale(100%) invert(100%);
 }
-#mySidenav .sma{
-    position: absolute;
-    bottom: 0;
+#mySidenav .sma {
+  position: absolute;
+  bottom: 0;
 }
-.menu.show #mysidenav{
-    height: 100vh;
+.menu.show #mysidenav {
+  height: 100vh;
 }
-.nav{
-    display: none;
+.nav {
+  display: none;
 }
-.menu img{
-    color: white;
-    border: none;
-    padding: 10px;
-    margin: 5px;
-    cursor: pointer;
+.menu img {
+  color: white;
+  border: none;
+  padding: 10px;
+  margin: 5px;
+  cursor: pointer;
 }
 .dropdown-content li {
-    list-style: none;
-    padding: 10px;
-    z-index: 0;
+  list-style: none;
+  padding: 10px;
+  z-index: 0;
 }
-.dropdown-content{
-    text-align: center;
-    display: flex;
-    align-items: center;
+.dropdown-content {
+  text-align: center;
+  display: flex;
+  align-items: center;
 }
-a{
-    text-decoration: none;
-    font-size: 50px;
-    display: flex;
-    font-weight: bold;
-    color: black;
-    letter-spacing: 2px;
+a {
+  text-decoration: none;
+  font-size: 50px;
+  display: flex;
+  font-weight: bold;
+  color: black;
+  letter-spacing: 2px;
 }
-a::first-letter{
-    vertical-align: middle;
+a::first-letter {
+  vertical-align: middle;
 }
 /*right container*/
-.right_cont{
-    position: absolute;
-    right: 10%;
-    top: 23%;
-    z-index: 3;
-    width: 750px;
-    height: 200px;
-    background-color: transparent;
-    visibility: visible;
-    animation-delay: 0.1s;
-    animation: fadeInRight 0.3s ease-in-out forwards;
+.right_cont {
+  position: absolute;
+  right: 10%;
+  top: 23%;
+  z-index: 3;
+  width: 750px;
+  height: 200px;
+  background-color: transparent;
+  visibility: visible;
+  animation-delay: 0.1s;
+  animation: fadeInRight 0.3s ease-in-out forwards;
 }
-.main_album_name{
-    display: flex;
-    justify-content: flex-end;
-    text-align: right;
+.main_album_name {
+  display: flex;
+  justify-content: flex-end;
+  text-align: right;
 }
-.main_album_name a{
-    color: white;
-    font-weight: bold;
-    font-size: 80px;
+.main_album_name a {
+  color: white;
+  font-weight: bold;
+  font-size: 80px;
 }
 @keyframes fadeInRight {
-    from {
-        opacity: 0;
-        transform: translateX(20px); 
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
-.line{
-    width: 275px;
-    position: absolute;
-    float: right;
-    border: 1px solid #fff;
-    right: 11px;
-    animation: fadeInRight 0.3s ease-in-out forwards;
-    bottom: 0;
+.line {
+  width: 275px;
+  position: absolute;
+  float: right;
+  border: 1px solid #fff;
+  right: 11px;
+  animation: fadeInRight 0.3s ease-in-out forwards;
+  bottom: 0;
 }
-.main_schedule a{
-    right: 10px;
-    bottom: -60px;
-    position: absolute;
-    color: #fff;
+.main_schedule a {
+  right: 10px;
+  bottom: -60px;
+  position: absolute;
+  color: #fff;
 }
-.main_schedule_word a{
-    right: 10px;
-    bottom: -100px;
-    position: absolute;
-    font-size: 20px;
-    color: #fff;
+.main_schedule_word a {
+  right: 10px;
+  bottom: -100px;
+  position: absolute;
+  font-size: 20px;
+  color: #fff;
 }
-#footer{
-    position: absolute;
-    bottom: 10px;
-    left: 0;
-    width: 100%;
-    z-index: 8;
-    height: 80px;
-    background-color: transparent;
+#footer {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+  z-index: 8;
+  height: 80px;
+  background-color: transparent;
 }
-.sma{
-    left: 3%;
+.sma {
+  left: 3%;
 }
-.sma li{
-    display: inline-block;
-    margin-left: 30px;
+.sma li {
+  display: inline-block;
+  margin-left: 30px;
 }
-.sma li img{
-    height: 50px;
-    width: 50px;
+.sma li img {
+  height: 50px;
+  width: 50px;
 }
 
 /* PROFILE CSS ----------------*/
-.profile{
-    z-index: 2;
+.profile {
+  z-index: 2;
 }
-#bgprofile{
-    background-color: rgb(234, 234, 234);
-    z-index: 0;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+#bgprofile {
+  background-color: rgb(234, 234, 234);
+  z-index: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
-#title_page{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    background-color: transparent;
-    height: 50px;
-    position: relative;
-    z-index: 3;
+#title_page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  background-color: transparent;
+  height: 50px;
+  position: relative;
+  z-index: 3;
 }
-.pg_num .name_page{
-    display: inline-block;
-    letter-spacing: 2px;
-    position: relative;
-    z-index: 3;
+.pg_num .name_page {
+  display: inline-block;
+  letter-spacing: 2px;
+  position: relative;
+  z-index: 3;
 }
 /* PFOFILE OF EACH ONE---------*/
-.cont{
-    position: fixed;
-    left: 267px;
-    width: auto;
-    height: auto;
-    margin: 0 auto;
-    z-index: 11;
+.cont {
+  position: fixed;
+  left: 267px;
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+  z-index: 11;
 }
-#idols{
-    position: fixed;
-    top: 0;
+#idols {
+  position: fixed;
+  top: 0;
 }
-#idols nav{
-    position: absolute;
-    top: 30px;
+#idols nav {
+  position: absolute;
+  top: 30px;
 }
-#idols ul li{
-    position: relative;
-    width: 160px;
-    font-size: 0;
-    text-align: right;
+#idols ul li {
+  position: relative;
+  width: 160px;
+  font-size: 0;
+  text-align: right;
 }
-#idols ul li a{
-    position: sticky;
-    left: 50%;
-    width: 160px;
-    font-size: 20px;
-    font-weight: bold;
-    text-align: left;
-    justify-content: flex-end;
+#idols ul li a {
+  position: sticky;
+  left: 50%;
+  width: 160px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left;
+  justify-content: flex-end;
 }
-.pfp{
-    position: relative;
-    left: -120px;
-    top: 50px;
-    width: 900px;
-    height: auto;
-    margin: 0 40%;
-    margin-bottom: 300px;
+.pfp {
+  position: relative;
+  left: -120px;
+  top: 50px;
+  width: 900px;
+  height: auto;
+  margin: 0 40%;
+  margin-bottom: 300px;
 }
-.profile_inner{
-    position: relative;
-    width: 800px;
-    height: 675px;
-    background-color: lightgreen;
-
+.profile_inner {
+  position: relative;
+  width: 800px;
+  height: 795px;
+  background-color: lightgreen;
 }
 /* bg colour for artist */
-.color_bg{
-    position: absolute;
-    top: -50px;
-    left: -50px;
-    width: 530px;
-    height: 100%;
-    opacity: 0.3;
-    background-color: #9197a7;
+.color_bg {
+  position: absolute;
+  top: -50px;
+  left: -50px;
+  width: 530px;
+  height: 100%;
+  opacity: 0.3;
+  background-color: #9197a7;
 }
-.artist_img{
-    position: absolute;
-    width: 530px;
-    height: 100%;
+.artist_img {
+  position: absolute;
+  width: 530px;
+  height: 100%;
 }
-.artist_img img{
-    width: 530px;
-    height: 675px;
-    object-fit: fill;
-    vertical-align: bottom;
+.artist_img img {
+  width: 530px;
+  height: auto;
+  object-fit: fill;
+  vertical-align: bottom;
 }
-.profile_text{
-    position: absolute;
-    width: 275px;
-    right: 0;
-    text-align: right;
+.profile_text {
+  position: absolute;
+  width: 275px;
+  right: 0;
+  text-align: right;
 }
